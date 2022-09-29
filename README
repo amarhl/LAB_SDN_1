@@ -4,3 +4,27 @@ def shoCharacter(character_:
 batman(Character = "Batman"
 showCharacter(batmanCharacter)
 batmanCharacters = ['Batman', 'Robin', 'Joker', 'Bane']
+
+class Character_Inherit():
+	''' CLASS OF BATMAN CHARACTER'''
+	def __init__(self, name, alias, role, abilities):
+		'''Initialize Values'''
+		self.name = name
+		self.alias = alias
+		self.role = role
+		self.abilities - abilities
+	def getName(self):
+		name = self.name
+		return name
+	
+	def getAbilitity(self):
+		ability = self.abilities
+		return ability
+	
+	def getRole(self):
+		role = self.role
+		return role
+		
+	def getAlias(self):
+		alias = self.alias
+		return alias
