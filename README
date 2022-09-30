@@ -1,4 +1,8 @@
 Hello Git World
+#create just a regular function
+def message():
+     print("This is an example of a simple function")
+     
 def shoCharacter(character_:
      print(character)
 batman(Character = "Batman"
