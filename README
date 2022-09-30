@@ -32,3 +32,13 @@ class Character_Inherit():
 	def getAlias(self):
 		alias = self.alias
 		return alias
+		
+# LAB 5 Python Function
+# Print Functions
+def first_function():
+	print("This is my first function without arguments")
+#first_message() # type this in to get the Global
+def second_function():
+	print("This is my second function without arguments")
+#second_message() # type this in to get the global
+
