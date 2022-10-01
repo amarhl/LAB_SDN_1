@@ -33,8 +33,11 @@ class Character_Inherit():
 		alias = self.alias
 		return alias
 		
+		
 # LAB 5 Python Function
-# Print Functions
+# Print Functions - For the first section we will simple create a function that does not accept an argument but prints a 
+# message to the screen. Write a print functions that do not require arguments that prints a message to the screen. 
+# Include  a screenshot of your code and the output of the function. 
 def first_function():
 	print("This is my first function without arguments")
 #first_message() # type this in to get the Global
@@ -42,3 +45,30 @@ def second_function():
 	print("This is my second function without arguments")
 #second_message() # type this in to get the global
 
+
+# Lab 5 Simple Functions with Single Arguments
+# For this section we will demonstrate the use of a function with a single argument. Create two functions that print a 
+# message to the terminal along with the value of the argument. Create a variable per function for a total of two variables 
+# and pass them into the function. 
+
+headphone01 = "sennheiser"
+headphone02 = "hifiman"
+def my_headphone(hiFidelity):
+	print("My favorite headphone is " + hiFidelity)
+# my_headphone(headphone01) # type this in
+def my_headphone(hiFidelity):
+	print("My favorite headphone is " + hiFedelity)
+# my_headphone(headphone02) # type this in
+
+
+# Lab 5 Ordered Arguments
+# In this section we are going to create two functions that accepts more than one argument as ordered arguments. Create
+# two separate functions and execute the code twice against different arguments. 
+headphone01 = "sennheiser"
+headphone02 = "hifiman"
+style01 = "open back headphone"
+style02 = "closed back headphone"
+def my_headphone(hiFidelity, style):
+	print("My favorite headphone is " + hiFidelity + " and it is " + style)
+# my_headphone(headpone01, style01) # type this is in global
+	
