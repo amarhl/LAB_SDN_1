@@ -71,4 +71,20 @@ style02 = "closed back headphone"
 def my_headphone(hiFidelity, style):
 	print("My favorite headphone is " + hiFidelity + " and it is " + style)
 # my_headphone(headpone01, style01) # type this is in global
+
+
+# Lab 5 List Arguments and For Loops
+# For the final example create two lists that are to be passed into your function. Create a function with a for loop
+# in it that will execute against all elements in the lists you pass through. Execute the function passing in your list. 
+# The output should be the code of your function is executed against each element. 
+def my_headphone(hiFidelity):
+	for h in hiFidelity:
+		print(h) # do not forget to indent this print #
+headphones = ['sennheiser', 'hifiman', 'bose', 'audeze']
+# my_headphone(headphones) # type this in the global
+def music_online(streaming):
+	for s in streaming:
+		print(s)
+services = ['iTunes', 'Tidal', 'Qobuz', 'Spotify']
+# music_online(services) # type this in 
 	
