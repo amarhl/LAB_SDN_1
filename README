@@ -103,56 +103,60 @@ cd Lab6
 class Headphone():
 	'''Class of Headphone'''
 	def __init__(self, name, style, quality, imaging, sound_profile):
-	     '''Initialize Values'''
-	     self.name = name
-	     self.style = style
-	     self.quality = quality
-	     self.imaging = imaging
-	     self.sound_profile = sound_profile
+		'''Initialize Values'''
+	     	self.name = name
+	     	self.style = style
+	     	self.quality = quality
+	     	self.imaging = imaging
+	     	self.sound_profile = sound_profile  
 	     
-Headphone01 = ('sennheiser', 'open back headphone', 'medium quality build', 'excellent', ' v shape sound')
-Headphone02 = ('bose', 'close back headphone', 'premium quality build', ' average', 'neutral sound')
-Headphone03 = ('hifiman', 'in ear monitor', 'high quality build', 'normal', 'bassy sound')
-headphone04 = ('focal', 'open back headphone', 'premium quality build', 'excellent imaging', m shape sound')
+Headphone01 = Headphone('sennheiser', 'open back headphone', 'medium quality build', 'excellent', ' v shape sound')
+Headphone02 = Headphone('bose', 'close back headphone', 'premium quality build', ' average', 'neutral sound')
+Headphone03 = Headphone('hifiman', 'in ear monitor', 'high quality build', 'normal', 'bassy sound')
+Headphone04 = Headphone('focal', 'open back headphone', 'premium quality build', 'excellent imaging', 'm shape sound')
 
 class Car():
 	'''Class of Car'''
-	def __init__(self, name, style, buiild, price):
+	def __init__(self, name, style, build, price):
 		'''Initialiaze Values'''  
 		self.name = name
 		self.style = style
 		self.build = build
 		self.price = price
-Car01 = ('toyota', 'sedan', 'excellent', 'affortable')
-Car02 = ('nissan', 'two door', 'average', 'pricey')
-Car03 = ('honda', 'sedan', 'medium', 'great price')
-Car04 = ('hyundai', 'sporty', 'excellent', 'normal price')
+		
+Car01 = Car('toyota', 'sedan', 'excellent', 'affortable')
+Car02 = Car('nissan', 'two door', 'average', 'pricey')
+Car03 = Car('honda', 'sedan', 'medium', 'great price')
+Car04 = Car('hyundai', 'sporty', 'excellent', 'normal price')
 	  
 class Fruit():
 	'''Class of Fruit'''
-	def __init_(self, name, category, dietary_vitamins_classification):
+	def __init__(self, name, category, dietary_vitamins, classification):
 		'''Initialiaze Values'''
 		self.name = name
 		self.category = category
-		self.dietary_vitamins = dietary_vitamins
+		self.dietary_vitamins = dietary_vitamins		
 		self.classification = classification
-Fruit01 = ('berry', 'seedless', 'vitamin c', 'vine')
-Fruit02 = ('banana', 'seedless', 'vitamin b', 'tree')
-Fruit03 = ('strawberry', 'seedy' 'vitamin c', 'plant')
-Fruit04 = ('pumpkin', 'seeda', 'vitamin a', 'vine')
+		
+Fruit01 = Fruit('berry', 'seedless', 'vitamin c', 'vine')
+Fruit02 = Fruit('banana', 'seedless', 'vitamin b', 'tree')
+Fruit03 = Fruit('strawberry', 'seedy', 'vitamin c', 'plant')
+Fruit04 = Fruit('pumpkin', 'seedy', 'vitamin a', 'vine')
+
 
 class Student():
 	'''Class of Student'''
-	def __init__(slef, name, course, term, status):
+	def __init__(self, name, course, term, status):
 		'''Initializa Values'''
 		self.name = name
 		self.course = course
 		self.term = term
-		self.housing = status
-Student01 = ('henry', 'SDN', 'fall semester', 'full time')
-Student02 = ('bhing', 'SDN', 'spring semester, 'part time')
-Student03 = ('levi', 'SPN1102', 'summer semester', 'part time')
-Student04 = ('julianah', ENC1002', 'fall semester', 'full time')
+		self.status = status
+		
+Student01 = Student('henry', 'SDN', 'fall semester', 'full time', '37')
+Student02 = Student('bhing', 'SDN', 'spring semester', 'part time', '32')
+Student03 = Student('levi', 'SPN 1002', 'summer semester', 'part time', '16')
+Student04 = Student('julianah', 'ENC 1101', 'fall semester', 'full time', '21')
 
 class Laptop():
 	'''Class of Laptop'''
@@ -162,19 +166,103 @@ class Laptop():
 		self.ram = ram
 		self.speed =speed
 		self.hard_drive = hard_drive
-Laptop01 = ('dell', '16 GB', '3 Ghz', '100 GB')		
-Laptop02 = ('hp', '8 GB', '2 Ghz', '120 GB')
-Laptop03 = ('acer','32 GB', '4 Ghz', '500 GB')
-Laptop04 = ('gateway', '6 GB', '1 Ghz', '80 GB')
+		
+Laptop01 = Laptop('dell', '16 GB', '3 Ghz', '100 GB')		
+Laptop02 = Laptop('hp', '8 GB', '2 Ghz', '120 GB')
+Laptop03 = Laptop('acer','32 GB', '4 Ghz', '500 GB')
+Laptop04 = Laptop('gateway', '6 GB', '1 Ghz', '80 GB')
 	     
 
 
 # Lab 6 Class Methods 
 # Create at least two methods for each class from above and execute from the instances created in the previous step. 
+class Headphone():
+	'''Class of Headphone'''
+	def __init__(self, name, style, quality, imaging, sound_profile):
+		'''Initialize Values'''
+		self.name = name
+		self.style = style	
+		self.quality = quality
+		self.imaging = imaging
+		self.sound_profile = sound_profile  
+	def getdesc(self):
+		description = f'Device Name		:{self.name}\n'\	
+			      f'Device Style		:{self.style}\n'\
+			      f'Quality			:{self.quality}\n'\
+			      f'Imaging			:{self.imaging}\n'\
+			      f'Sound Profile		:{self.sound_profile}'
+		return desc
+	     
+Headphone01 = Headphone('sennheiser', 'open back headphone', 'medium quality build', 'excellent', ' v shape sound')
+Headphone02 = Headphone('bose', 'close back headphone', 'premium quality build', ' average', 'neutral sound')
+Headphone03 = Headphone('hifiman', 'in ear monitor', 'high quality build', 'normal', 'bassy sound')
+Headphone04 = Headphone('focal', 'open back headphone', 'premium quality build', 'excellent imaging', 'm shape sound')
+print('HeadPhone01\n', Headphone01.getdesc(), '\n', sep='')
+print('HeadPhone02\n', Headphone04.getdesc(), sep='')
+
+# Lab 6 Class Methods another example ###
+class Student():
+	'''Class of Student'''
+	def __init__(self, name, course, term, status, age):
+		'''Initializa Values'''
+		self.name = name
+		self.course = course
+		self.term = term
+		self.status = status
+		self.age = age
+	def getdesc(self):
+		desc =  f'Student Name			:{self.name}\n'\	
+			f'Course Enrolled		:{self.course}\n'\
+			f'Term				:{self.term}\n'\
+			f'Status			:{self.status}\n'\
+			f'Age				:{self.age}'
+		return desc
+	     		
+Student01 = Student('henry', 'SDN', 'fall semester', 'full time', '37')
+Student02 = Student('bhing', 'SDN', 'spring semester', 'part time', '32')
+Student03 = Student('levi', 'SPN 1002', 'summer semester', 'part time', '16')
+Student04 = Student('julianah', 'ENC 1101', 'fall semester', 'full time', '21')
+print('StudentOne\n', Student03.getdesc(), '\n', sep='')
+print('StudentTwo\n', Student04.getdesc(), sep='')
+
 
 # Lab 6  Inheritance
 # Create two child classes that inherit values from all the classes defined in previous steps and create at least four instances. 
 # Create at least one method for eveyr child class specific to that class and execute the methods from instances of the class. 
+class Headphone():
+	'''Class of Headphone'''
+	def __init__(self, name, style, quality, imaging, sound_profile):
+		'''Initialize Values'''
+		self.name = name
+		self.style = style	
+		self.quality = quality
+		self.imaging = imaging
+		self.sound_profile = sound_profile  
+	def getdesc(self):
+		description = f'Device Name		:{self.name}\n'\	
+			      f'Device Style		:{self.style}\n'\
+			      f'Quality			:{self.quality}\n'\
+			      f'Imaging			:{self.imaging}\n'\
+			      f'Sound Profile		:{self.sound_profile}'
+		return desc
+class InEarMonitor(Headphone):
+	'''return a formatted description of the in ear monitor'''
+	def getdesc(self):
+		desc = (f'Device Name 			:{self.name}\n'\
+			f'Device Style			:{self.style}\n'\
+			f'Quality			:{self.quality}\n'\
+			f'Imaging			:{self.imaging}}\n'\
+			f'Sound Quality			:{self.sound_profile}')
+		return desc
+
+Headphone01 = Headphone('sennheiser', 'open back headphone', 'medium quality build', 'excellent', ' v shape sound')
+Headphone02 = Headphone('bose', 'close back headphone', 'premium quality build', ' average', 'neutral sound')
+Headphone03 = Headphone('hifiman', 'in ear monitor', 'high quality build', 'normal', 'bassy sound')
+Headphone04 = Headphone('focal', 'open back headphone', 'premium quality build', 'excellent imaging', 'm shape sound')
+Headphone05 = InEarMonitor('Shure', semi open headphone', premium quility build', top notch', 'neutral sound')
+print('InEarMonitor01\n', Headphone05.getdesc(), sep ='')
+print('HeadPhone01\n', Headphone01.getdesc(), '\n', sep='')
+print('HeadPhone02\n', Headphone04.getdesc(), sep='')
 
 # Lab 6 Importing from a Module
 # Import the classes individually from a module and create at least two instances
