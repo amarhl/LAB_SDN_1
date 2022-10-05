@@ -101,8 +101,8 @@ cd Lab6
 # Lab 6 Create Python Classes
 # Create a simple class with at least four attibutes and four instances (5)
 class Headphone():
-	'''Class of Headphone''''
-	def __init__(self, name, style, quality, imaging, sound_profile)
+	'''Class of Headphone'''
+	def __init__(self, name, style, quality, imaging, sound_profile):
 	     '''Initialize Values'''
 	     self.name = name
 	     self.style = style
@@ -113,37 +113,38 @@ class Headphone():
 class Car():
 	'''Class of Car'''
 	def __init__(self, name, style, buiild, price):
-	     '''Initialiaze Values'''  
-	     self.name = name
-	     self.style = style
-	     self.build = build
-	     self.price = price
+		'''Initialiaze Values'''  
+		self.name = name
+		self.style = style
+		self.build = build
+		self.price = price
 	  
 class Fruit():
 	'''Class of Fruit'''
 	def __init_(self, name, category, dietary_vitamins_classification):
-	     '''Initialiaze Values'''
-	     self.name = name
-	     self.category = category
-	     self.dietary_vitamins = dietary_vitamins
-	     self.classification = classification
+		'''Initialiaze Values'''
+		self.name = name
+		self.category = category
+		self.dietary_vitamins = dietary_vitamins
+		self.classification = classification
 	  
 class Student():
 	'''Class of Student'''
 	def __init__(slef, name, course, term, housin):
-	     '''Initializa Values'''
-	     self.name = name
-	     self.course = course
-	     self.term = term
-	     self.housing = housing
+		'''Initializa Values'''
+		self.name = name
+		self.course = course
+		self.term = term
+		self.housing = housing
 	    
 class Laptop():
 	'''Class of Laptop'''
 	def __init__(self, name, ram, speed, hard_drive):
-	self.name = name
-	self.ram = 
-	self.speed =speed
-	self.hard_drive = hard_drive
+		'''Initialize Values'''
+		self.name = name
+		self.ram = ram
+		self.speed =speed
+		self.hard_drive = hard_drive
 	     
 
 
