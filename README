@@ -88,3 +88,23 @@ def music_online(streaming):
 services = ['iTunes', 'Tidal', 'Qobuz', 'Spotify']
 # music_online(services) # type this in 
 	
+	
+	
+
+# Lab 6 Python Class Lab
+# Example requirement(quantity)
+# Change directory (5) <-- command should be entered fives times
+
+# Lab 6 Create Python Classes
+# Create a simple class with at least four attibutes and four instances (5)
+
+# Lab 6 Class Methods 
+# Create at least two methods for each class from above and execute from the instances created in the previous step. 
+
+# Lab 6  Inheritance
+# Create two child classes that inherit values from all the classes defined in previous steps and create at least four instances. 
+# Create at least one method for eveyr child class specific to that class and execute the methods from instances of the class. 
+
+# Lab 6 Importing from a Module
+# Import the classes individually from a module and create at least two instances
+# import at least two classes using aliases and create at least two instances using the alias. 
