@@ -109,6 +109,11 @@ class Headphone():
 	     self.quality = quality
 	     self.imaging = imaging
 	     self.sound_profile = sound_profile
+	     
+Headphone01 = ('sennheiser', 'open back headphone', 'medium quality build', 'excellent', ' v shape sound')
+Headphone02 = ('bose', 'close back headphone', 'premium quality build', ' average', 'neutral sound')
+Headphone03 = ('hifiman', 'in ear monitor', 'high quality build', 'normal', 'bassy sound')
+headphone04 = ('focal', 'open back headphone', 'premium quality build', 'excellent imaging', m shape sound')
 
 class Car():
 	'''Class of Car'''
@@ -118,6 +123,10 @@ class Car():
 		self.style = style
 		self.build = build
 		self.price = price
+Car01 = ('toyota', 'sedan', 'excellent', 'affortable')
+Car02 = ('nissan', 'two door', 'average', 'pricey')
+Car03 = ('honda', 'sedan', 'medium', 'great price')
+Car04 = ('hyundai', 'sporty', 'excellent', 'normal price')
 	  
 class Fruit():
 	'''Class of Fruit'''
@@ -127,16 +136,24 @@ class Fruit():
 		self.category = category
 		self.dietary_vitamins = dietary_vitamins
 		self.classification = classification
-	  
+Fruit01 = ('berry', 'seedless', 'vitamin c', 'vine')
+Fruit02 = ('banana', 'seedless', 'vitamin b', 'tree')
+Fruit03 = ('strawberry', 'seedy' 'vitamin c', 'plant')
+Fruit04 = ('pumpkin', 'seeda', 'vitamin a', 'vine')
+
 class Student():
 	'''Class of Student'''
-	def __init__(slef, name, course, term, housin):
+	def __init__(slef, name, course, term, status):
 		'''Initializa Values'''
 		self.name = name
 		self.course = course
 		self.term = term
-		self.housing = housing
-	    
+		self.housing = status
+Student01 = ('henry', 'SDN', 'fall semester', 'full time')
+Student02 = ('bhing', 'SDN', 'spring semester, 'part time')
+Student03 = ('levi', 'SPN1102', 'summer semester', 'part time')
+Student04 = ('julianah', ENC1002', 'fall semester', 'full time')
+
 class Laptop():
 	'''Class of Laptop'''
 	def __init__(self, name, ram, speed, hard_drive):
@@ -145,6 +162,10 @@ class Laptop():
 		self.ram = ram
 		self.speed =speed
 		self.hard_drive = hard_drive
+Laptop01 = ('dell', '16 GB', '3 Ghz', '100 GB')		
+Laptop02 = ('hp', '8 GB', '2 Ghz', '120 GB')
+Laptop03 = ('acer','32 GB', '4 Ghz', '500 GB')
+Laptop04 = ('gateway', '6 GB', '1 Ghz', '80 GB')
 	     
 
 
