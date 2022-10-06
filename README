@@ -239,30 +239,66 @@ class Headphone():
 		self.imaging = imaging
 		self.sound_profile = sound_profile  
 	def getdesc(self):
-		description = f'Device Name		:{self.name}\n'\	
-			      f'Device Style		:{self.style}\n'\
-			      f'Quality			:{self.quality}\n'\
-			      f'Imaging			:{self.imaging}\n'\
-			      f'Sound Profile		:{self.sound_profile}'
+		desc =	f'Device Name 		:{self.name}\n'\	
+			f'Device Style		:{self.style}\n'\
+			f'Quality		:{self.quality}\n'\
+			f'Imaging		:{self.imaging}\n'\
+			f'Sound Profile		:{self.sound_profile}'
 		return desc
 class InEarMonitor(Headphone):
 	'''return a formatted description of the in ear monitor'''
 	def getdesc(self):
-		desc = (f'Device Name 			:{self.name}\n'\
-			f'Device Style			:{self.style}\n'\
-			f'Quality			:{self.quality}\n'\
-			f'Imaging			:{self.imaging}}\n'\
-			f'Sound Quality			:{self.sound_profile}')
+		desc =	f'Device Name 		:{self.name}\n'\
+			f'Device Style 		:{self.style}\n'\
+			f'Quality		:{self.quality}\n'\
+			f'Imaging		:{self.imaging}\n'\
+			f'Sound Quality		:{self.sound_profile}'
 		return desc
 
 Headphone01 = Headphone('sennheiser', 'open back headphone', 'medium quality build', 'excellent', ' v shape sound')
 Headphone02 = Headphone('bose', 'close back headphone', 'premium quality build', ' average', 'neutral sound')
 Headphone03 = Headphone('hifiman', 'in ear monitor', 'high quality build', 'normal', 'bassy sound')
 Headphone04 = Headphone('focal', 'open back headphone', 'premium quality build', 'excellent imaging', 'm shape sound')
-Headphone05 = InEarMonitor('Shure', semi open headphone', premium quility build', top notch', 'neutral sound')
+Headphone05 = InEarMonitor('Shure', 'semi open headphone', 'premium quility build', 'top notch', 'neutral sound')
 print('InEarMonitor01\n', Headphone05.getdesc(), sep ='')
 print('HeadPhone01\n', Headphone01.getdesc(), '\n', sep='')
 print('HeadPhone02\n', Headphone04.getdesc(), sep='')
+
+#Lab 6 Inheritance another example ##
+class Student():
+	'''Class of Student'''
+	def __init__(self, name, course, term, status, age):
+		'''Initializa Values'''
+		self.name = name
+		self.course = course
+		self.term = term
+		self.status = status
+		self.age = age
+	def getdesc(self):
+		desc =  f'Student Name  		:{self.name}\n'\	
+			f'Course Enrolled  		:{self.course}\n'\
+			f'Term  			:{self.term}\n'\
+			f'Status  			:{self.status}\n'\
+			f'Age  				:{self.age}'
+		return desc
+class TransferStudent(Student):
+	'''return a formatted description of the transfer student'''
+	def getdesc(self):
+		desc = f'Student Name  		:{self.name}\n'\
+		       f'Course Enrolled  	:{self.course}\n'\
+		       f'Term  			:{self.term}\n'\
+		       f'Status  		:{self.status}\n'\
+		       f'Age			:{self.age}'
+		return desc
+		
+student03 = Student('levi', 'SPN 1102', 'summer semester', 'part time', '16')
+student04 = Student('julianah', 'ENC 1101', 'fall semester', 'full time', '21')
+student05 = TransferStudent('angelo', 'algebra 1', 'spring semester', 'full time', '27')
+print('Studentone\n', student04.getdesc(), '\n', sep='')
+print('TransferStudentOne\n', student05.getdesc(), '\n', sep='')
+
+
+
 
 # Lab 6 Importing from a Module
 # Import the classes individually from a module and create at least two instances
